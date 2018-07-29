@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:id="@+id/mainrelative"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapcustom"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomMapActivity" />
+    <RelativeLayout
+        android:id="@+id/search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@drawable/places_ic_search"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="30dp"/>
+>
+        <AutoCompleteTextView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:hint="Search location"
+            android:textColorHint="@color/grey_hint"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/information"
+            android:layout_width="wrap_content"
+            android:src="@drawable/info_icon"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/mapsss"
+            android:layout_height="wrap_content"/>
+        >
+        <ImageView
+            android:id="@+id/mapsss"
+            android:layout_width="wrap_content"
+            android:src="@drawable/maps_icon"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/search_bar"
+            android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/mylocation"
+        android:layout_width="wrap_content"
+        android:src="@drawable/mylocation_icon"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/search_bar"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>
